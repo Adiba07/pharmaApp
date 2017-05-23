@@ -1,3 +1,8 @@
+/*
+
+cette partie est faite par adiba boufeldja et imane bourmaki
+
+*/
 package METIER;
 
 import BDD.Parameter;
@@ -28,9 +33,9 @@ public class Compte {
      boolean n;
     
     public Compte(){
-          db = new db_connection(new Parameter().HOST_DB, new Parameter().USERNAME_DB,new Parameter().PASSWORD_DB, new Parameter().IPHOST, new Parameter().PORT);    
      
-       
+         db = new db_connection(new Parameter().HOST_DB, new Parameter().USERNAME_DB,new Parameter().PASSWORD_DB, new Parameter().IPHOST, new Parameter().PORT);    
+     
     }
     public void connecter(String login1,String pass_word1) throws IOException{
         username=login1;
@@ -76,34 +81,28 @@ public class Compte {
           
           
           
-          
-          
-
        if (login == null && pass_word == null) {
             JOptionPane.showMessageDialog(Login, "le nom utilisateur ou le mots de pass est incorrect");
             Login l = new Login();
             l.setVisible(true);
 
-            //System.out.println("le nom utilisateur ou le mots de pass est incorrect");
         } else {
             if (type.equals("administrateur")) {
-               // n=true; 
+         
                 admin a = new admin();
                 a.setVisible(true);
                 Login l = new Login();
                 l.dispose();
                     
             } else {
-                // n=false;
+              
                 vendeur b = new vendeur();
                 b.setVisible(true);
                  Login l = new Login();
                 l.dispose();
              
             }}
-      
-       
-       
+             
     }
     
     
@@ -113,18 +112,7 @@ public class Compte {
         return n;
     }
     
-   /* public String user()
-    {
-       return username;
-    
-    }
-      
-    public String password()
-     {
-         return password;
-    
-       }
-*/
+
     public void deconnecter(){
            
            db.closeconnexion();

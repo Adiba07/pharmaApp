@@ -1,3 +1,10 @@
+/*********************************************
+
+
+     cette partie est fait par imane bourmaki
+
+
+***********************************************/
 package INTERFACE;
 
 import BDD.ResultSetTableModel;

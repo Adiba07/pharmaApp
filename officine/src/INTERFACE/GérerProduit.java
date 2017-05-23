@@ -1,3 +1,10 @@
+/*********************************************
+
+
+     cette partie est fait par Ghitri karim
+
+
+***********************************************/
 package INTERFACE;
 
 import BDD.Parameter;

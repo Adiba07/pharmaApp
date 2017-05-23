@@ -1,3 +1,5 @@
+
+
 package METIER;
 
 import BDD.Parameter;
@@ -16,6 +18,11 @@ public Stock(){
      db = new db_connection(new Parameter().HOST_DB, new Parameter().USERNAME_DB,new Parameter().PASSWORD_DB, new Parameter().IPHOST, new Parameter().PORT);
     }
 
+/*
+ 
+  cette partie est fait par ghitri karim
+
+*/
 
 public  TableModel affiche2(String prix,String nom){
   String table1="article";String table2="stock" ;

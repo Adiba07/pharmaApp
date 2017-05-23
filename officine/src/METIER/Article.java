@@ -1,3 +1,6 @@
+
+
+
 package METIER;
 
 import BDD.Parameter;
@@ -20,7 +23,12 @@ public class Article {
     int code_art;
     
    
-         public void ajouter_article(String prix,String nom_art,String categorie,String n_lot,String date_fab,String date_exp,String dci,String forme,String dosage,String quan){  
+/* 
+
+    cette partie est faite par ghitri karim (ajouter/ modifier/ supprimer_article)
+    
+ */
+    public void ajouter_article(String prix,String nom_art,String categorie,String n_lot,String date_fab,String date_exp,String dci,String forme,String dosage,String quan){  
             
            String[] colon = {"prix","nom_art","categorie","n_lot","dci","forme","dosage","date_fab","date_exp"};
             String[] inf = {""+prix,nom_art,""+categorie,""+n_lot,""+dci,""+forme,""+dosage,""+date_fab,""+date_exp};

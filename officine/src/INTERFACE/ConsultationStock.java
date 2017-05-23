@@ -1,4 +1,10 @@
+/*********************************************
 
+
+     cette partie est fait par adiba boufeldja et bouaykoub djalel 
+
+
+***********************************************/ 
 package INTERFACE;
 
 import METIER.Stock;

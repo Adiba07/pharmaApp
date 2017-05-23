@@ -1,8 +1,11 @@
+
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+ par zehhar taha et boufeldja adiba 
+
+*/
+
+
 package INTERFACE;
 import java.text.SimpleDateFormat;
 import METIER.Compte;
@@ -31,7 +34,7 @@ public class VenteView extends javax.swing.JFrame {
     public String TypeCompte;
 
     
-    //String id_s;
+  
     public VenteView() {
         initComponents();
         v =new Vente();
@@ -320,9 +323,17 @@ public class VenteView extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+  
+    /*
+     
+    
+    cette partie est faite par adiba boufeldja  ( jButton2ActionPerformed ()) 
+    
+   
+    */
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    Compte cmp = new Compte();
+   
+        Compte cmp = new Compte();
     File file = new File("fichier.txt");
     BufferedReader BR =null;
     try{
@@ -354,6 +365,14 @@ public class VenteView extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    /*
+     
+    
+       cette partie est faite par zehhar taha 
+    
+   
+    */
+    
     private void tableproMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableproMouseClicked
         t3.requestFocus();
     }//GEN-LAST:event_tableproMouseClicked

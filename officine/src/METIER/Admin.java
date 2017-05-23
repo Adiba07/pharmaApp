@@ -1,8 +1,15 @@
+  /*
+
+    cette partie est faite par bourmaki imane ( ajouter compte / modifier compte / supprimer compte / table)    
+
+    */
+
+
 package METIER;
 
 import BDD.Parameter;
 import BDD.db_connection;
-import INTERFACE.GComptes;
+
 import INTERFACE.GérerCompte;
 import INTERFACE.Login;
 import java.awt.Component;
@@ -44,16 +51,18 @@ public class Admin extends Vendeur{
             } catch (SQLException ex) {
                 Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
             }
-            String[] colon1 = {"num_ven", "login","pass_word","typ"};
+            String[] colon1 = {"num_venc", "login","pass_word","typ"};
             String[] inf1 = {""+nv,login,pass_word,type};
             System.out.println(db.queryInsert("compte",colon1, inf1));
             JOptionPane.showMessageDialog(null,"le compte est ajouté");
-            GComptes c = new GComptes();
+            GérerCompte c = new GérerCompte();
             c.setVisible(true);            
         }
         
     }
-    
+   
+   
+
     public void modifier_compte(String id,String nom,String prenom,String num_tel,String login,String pass_word,String type){
      try{
        if(JOptionPane.showConfirmDialog(null,"confirmer la modification","modification",JOptionPane.YES_NO_OPTION)==JOptionPane.OK_OPTION)
@@ -63,7 +72,7 @@ public class Admin extends Vendeur{
            String[] colon1 = {"login","pass_word","typ"};
            String[] inf1 = {login,pass_word,type};
            db.queryUpdate("vendeur",colon,inf,"num_ven='"+id+"'");
-           db.queryUpdate("compte",colon1,inf1,"num_ven='"+id+"'");
+           db.queryUpdate("compte",colon1,inf1,"num_venc='"+id+"'");
            JOptionPane.showMessageDialog(null,"le compte est modifier");
             GérerCompte g = new GérerCompte();
             g.setVisible(true);  
@@ -77,7 +86,7 @@ public class Admin extends Vendeur{
                if (id == null){JOptionPane.showMessageDialog(null,"selectionner un compte");}
         else{
         if (JOptionPane.showConfirmDialog(null, "est ce que tu veux suuprimer", "attention!!!", JOptionPane.OK_CANCEL_OPTION) == JOptionPane.OK_OPTION) {
-            System.out.println( db.queryDelete("compte", "num_ven="+ id));
+            System.out.println( db.queryDelete("compte", "num_venc="+ id));
             System.out.println( db.queryDelete("vendeur","num_ven="+id));
         } 
     }

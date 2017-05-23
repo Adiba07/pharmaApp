@@ -1,3 +1,8 @@
+/***
+ 
+ faite par  le groupe 
+ 
+ ***/
 package BDD;
 
 
@@ -210,7 +215,7 @@ public class db_connection {
         return this.exécutionUpdate(SQL);
 
     }
-    
+    // jointure et jointure2 et jointure3 et jointure4 fait par bouyakoub djelel  
        public ResultSet jointure(String table1,String table2,String[] colone,String etat1){
         String SQL="SELECT";
         int i;

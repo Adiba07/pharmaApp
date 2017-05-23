@@ -1,3 +1,9 @@
+/*
+
+cette partie est faite par zehhar tahar
+
+*/
+
 
 package METIER;
 
@@ -91,16 +97,5 @@ public class Vente {
      return rss;
  }
  
- /*
- public String Date(String D)
- {
-     String[] tabCol = {"code_art","prix","nom","quantite","date_sys","prix_total"};
-     String[] tabVal = {"15","2000","nom11","4",""+D,"2000"};
-     System.out.print("\n\n vente avant la requete \n\n");
-     String rss = db.queryInsert("vente", tabCol, tabVal);
-     System.out.print(rss);
 
-     System.out.print("\n\nvente apres la requete\n\n");
-     return rss;
- }*/
 }
